@@ -1,7 +1,11 @@
+body {
+  background-color: rgba(184, 217, 245, 0.411)
+}
+
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: #fad6a6;
   }
   
   .label {
@@ -16,5 +20,15 @@ li {
   
   .form-group {
     margin-bottom: 5px;
+  }
+
+  #headerImage{
+    height: 220px;
+    width: 220px;
+    background-image: url("../images/download.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   

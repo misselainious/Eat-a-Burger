@@ -10,9 +10,9 @@
 <h2>Burgs for eaten!</h2>
 
 <ul>
-  {{#each cats}}
+  {{#each burgers}}
     {{#unless eaten}}
-      {{> cats/burger-block eat=true}}
+      {{> burgers/burger-block eat=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -20,9 +20,9 @@
 <h2>Burgs that been ate!</h2>
 
 <ul>
-  {{#each cats}}
+  {{#each burgers}}
     {{#if eaten}}
-      {{> cats/burger-block eat=false}}
+      {{> burgers/burger-block eat=false}}
     {{/if}}
   {{/each}}
 </ul>

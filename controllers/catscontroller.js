@@ -3,11 +3,11 @@ var express = require("express");
 var router = express.Router();
 
 // Import the model (cat.js) to use its database functions.
-var cat = require("../models/cat.js");
+var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  cat.all(function(data) {
+  burger.all(function(data) {
     var hbsObject = {
       cats: data
     };
@@ -17,10 +17,10 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/cats", function(req, res) {
-  cat.create([
-    "name", "eaten"
+  burger.create([
+    "name"
   ], [
-    req.body.name, req.body.eaten
+    req.body.name
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
@@ -32,7 +32,7 @@ router.put("/api/cats/:id", function(req, res) {
 
   console.log("condition", condition);
 
-  cat.update({
+  burger.update({
     eaten: req.body.eaten
   }, condition, function(result) {
     if (result.changedRows == 0) {
@@ -43,8 +43,6 @@ router.put("/api/cats/:id", function(req, res) {
     }
   });
 });
-
-
 
 // Export routes for server.js to use.
 module.exports = router;

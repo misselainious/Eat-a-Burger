@@ -18,11 +18,7 @@ var cat = {
       cb(res);
     });
   }
-
-  
 };
-
-
 
 // Export the database functions for the controller (burgersController.js).
 module.exports = cat;

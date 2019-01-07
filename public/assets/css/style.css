@@ -14,7 +14,7 @@ body {
 li {
     padding: 5px;
     margin: 5px;
-    background: #fad6a6;
+    /* background: #fad6a6; */
   }
   
   .label {
@@ -36,7 +36,13 @@ li {
     margin-bottom: 30px;
     margin-left: 25px;
   }
-
+  #uneaten{
+    background-color: rgba(255, 205, 113, 0.712);
+  }
+#eatenBurgs{
+  background-color: gray;
+  color: white;
+}
   #headerImage{
     height: 220px;
     width: 220px;

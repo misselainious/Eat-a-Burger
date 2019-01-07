@@ -9,7 +9,7 @@
 
 <h2>Burgs for eaten!</h2>
 
-<ul>
+<ul id="uneaten">
   {{#each burgers}}
     {{#unless eaten}}
       {{> burgers/burger-block eat=true}}
@@ -17,7 +17,7 @@
   {{/each}}
 </ul>
 
-<h2>Burgs that been ate!</h2>
+<h2>Burgs that you ate!</h2>
 
 <ul id="eatenBurgs">
   {{#each burgers}}

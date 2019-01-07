@@ -1,21 +1,11 @@
-{{!-- <li>
-	{{name}}
-	{{#if eat}}
-	<button class="change-status" data-id="{{id}}" data-newSleep="{{eat}}">
-		EAT ME!
-		{{!-- {{else}}Oops! --}}
-	{{!-- </button>
-	{{/if}}
-</li> --}} 
-
 
 <li class="eatenBurgs">
 	{{name}}
-	
+
+	{{#if eat}}
 	<button class="change-status" data-id="{{id}}" data-newStatus="{{eat}}">
-		{{#if eat}} EAT ME!
-		{{else}}Oops!
-		{{/if}}
+		 EAT ME!
 	</button>
-	
+	{{/if}}
+
 </li>
